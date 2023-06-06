@@ -1,11 +1,40 @@
 import Card from "react-bootstrap/Card";
+import { useState } from "react";
 
-const PlayerCard = () => {
+const PlayerCard = ({ name, img, statistics }) => {
+  const [showImage, setShowImage] = useState(true);
+  const victor = () => {
+    setShowImage(false);
+    // showImage && setTimeout(() => setShowImage(true), 2000);
+  };
+  const alex = () => {
+    setShowImage(true);
+  };
+
   return (
-    <Card>
-      <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
+    <Card
+      onMouseOver={victor}
+      className="rounded-2 m-auto player-card"
+      role="button"
+      onMouseOut={alex}
+    
+    >
+      {showImage ? (
+        <Card.Img variant="top" src={img} className="player-logo" />
+      ) : (
+        <ul className="m-auto">
+          {statistics.map((item, i) => {
+            return (
+              <li key={i} className="h5 text-start list-unstyled">
+                🏀 {item}
+              </li>
+            );
+          })}
+        </ul>
+      )}
+
       <Card.Footer>
-        <Card.Title></Card.Title>
+        <Card.Title>{name}</Card.Title>
       </Card.Footer>
     </Card>
   );
