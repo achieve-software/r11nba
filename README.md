@@ -24,9 +24,7 @@ Project aims to show Nba Legends and their statistics
 ## Project-link
 https://aesthetic-croquembouche-9e333e.netlify.app/
 ### At the end of the project, following topics are to be covered;
-- HTML
-- CSS
-- JS
+-React
 
 # Getting Started with Create React App
 
