@@ -3,7 +3,6 @@
 Project aims to show Nba Legends and their statistics
 ## Project Skeleton
 ```
- find-the-number-game(folder)
 |
 |----readme.md                 
 |----public
