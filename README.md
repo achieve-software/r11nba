@@ -1,3 +1,33 @@
+# Nba Legends
+## Description
+Project aims to show Nba Legends and their statistics
+## Project Skeleton
+```
+ find-the-number-game(folder)
+|
+|----readme.md                 
+|----public
+        |----index.html      
+|----src
+        |----assets
+              |----nba-logo.png
+        |----components
+              |----CardContainer.jsx
+              |----Header.jsx
+              |----PlayerCard.jsx
+        |----helpers
+              |----data.js
+
+```
+## Project-gif
+![JavaScript-project](https://raw.githubusercontent.com/achieve-software/achieve-software/main/img/r11nba-min.gif)
+## Project-link
+https://aesthetic-croquembouche-9e333e.netlify.app/
+### At the end of the project, following topics are to be covered;
+- HTML
+- CSS
+- JS
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
